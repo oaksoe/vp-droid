@@ -1,0 +1,43 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<Button-->
+        <!--android:id="@+id/back_to_main"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:text="Back" />-->
+<!--</LinearLayout>-->
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/property_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/property_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Button-->
+        <!--android:id="@+id/back_to_main"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:text="Back" />-->
+
+    </FrameLayout>
+<!-- The navigation drawer -->
+    <ListView android:id="@+id/property_sidemenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="@android:color/holo_blue_light"/>
+</android.support.v4.widget.DrawerLayout>

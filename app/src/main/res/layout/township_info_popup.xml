@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:background="@drawable/lightblue">-->
+    <TextView
+        android:id="@+id/township_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/properties_sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Properties Sold: "
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/properties_booked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Properties Booked: "
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/properties_developing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Properties Developing: "
+        android:textSize="15sp"/>
+</LinearLayout>
+
