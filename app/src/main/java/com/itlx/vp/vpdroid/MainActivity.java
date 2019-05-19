@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements
                     String propertyDescription = propertyDescriptionEditText.getText().toString();
                     String propertyAddress = propertyAddressText.getText().toString();
                     String propertyType = propertyTypeSpinner.getSelectedItem().toString();
-                    String propertyIconPath = propertyIcon.getTag().toString();
+                    // String propertyIconPath = propertyIcon.getTag().toString();
                     Marker propertyMarker = map.addMarker(new MarkerOptions().position(propertyPos).title(propertyName));
 
                     Property property = new Property();
@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity implements
                     property.setDescription(propertyDescription);
                     property.setAddress(propertyAddress);
                     property.setType(PropertyType.valueOf(propertyType));
-                    property.setIcon(propertyIconPath);
+                    // property.setIcon(propertyIconPath);
                     landmarks.put(propertyMarker.getId(), property);
 
                     propertyMarker.showInfoWindow();
@@ -232,13 +232,13 @@ public class MainActivity extends AppCompatActivity implements
 
                     propertyPopup.dismiss();
 
-                    Bitmap iconBitmap = BitmapHelper.ShrinkBitmap(propertyIconPath, 100, 100);
+                    // Bitmap iconBitmap = BitmapHelper.ShrinkBitmap(propertyIconPath, 100, 100);
 
-                    GroundOverlay mGroundOverlayRotated = map.addGroundOverlay(new GroundOverlayOptions()
-                            .image(BitmapDescriptorFactory.fromBitmap(iconBitmap)).anchor(0, 1)
-                            .position(propertyPos, 430f, 302f)
-                            .bearing(30)
-                            .clickable(true));
+//                    GroundOverlay mGroundOverlayRotated = map.addGroundOverlay(new GroundOverlayOptions()
+//                            .image(BitmapDescriptorFactory.fromBitmap(iconBitmap)).anchor(0, 1)
+//                            .position(propertyPos, 430f, 302f)
+//                            .bearing(30)
+//                            .clickable(true));
                 }
             });
         }

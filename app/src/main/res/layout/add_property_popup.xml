@@ -36,12 +36,12 @@
         android:id="@id/load_property_icon"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_gravity="left"
         android:text="Load Icon" />
     <Button
         android:id="@+id/add_property"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_gravity="left"
         android:text="Add" />
 </LinearLayout>
